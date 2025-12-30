@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const API = process.env.API ;
+const API = import.meta.env.VITE_API_URL; ;
 
 export default function ViewPaste() {
   const { slug } = useParams();
