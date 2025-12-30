@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API = "http://localhost:5000";
+const API = process.env.API || "http://localhost:5000";
 
 export default function CreatePaste() {
   const [content, setContent] = useState("");
