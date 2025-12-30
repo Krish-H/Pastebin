@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const API = "http://localhost:5000";
+const API = process.env.API || "http://localhost:5000";
 
 export default function ViewPaste() {
   const { slug } = useParams();
