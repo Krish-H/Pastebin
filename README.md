@@ -1,23 +1,177 @@
-# Pastebin-like Application
+# Pastebin Clone – Full Stack MERN Application
 
-This is a small web application, where users can quickly store and share text content by generating a shareable link, and view the content using that link.
+A full‑stack Pastebin‑like web application built using **Vite + React** for the frontend and **Node.js + Express** for the backend. Users can create, share, and view text pastes via unique URLs.
 
-## Prerequisites
+---
 
-- Node.js and npm installed
-- A running instance of MongoDB
+## 🚀 Live Demo
 
-## How to Run
+* **Frontend (Vercel):** [https://pastebin-git-main-krishs-projects-047c2389.vercel.app/](https://pastebin-git-main-krishs-projects-047c2389.vercel.app/)
+* **Backend (Render):** [https://pastebin-s77e.onrender.com/](https://pastebin-s77e.onrender.com/)
 
-1.  **Backend:**
-    -   Navigate to the `backend` directory.
-    -   Run `npm install` to install the dependencies.
-    -   Make sure your MongoDB server is running.
-    -   Run `node index.js` to start the backend server. It will run on `http://localhost:5000`.
+---
 
-2.  **Frontend:**
-    -   Navigate to the `frontend` directory.
-    -   Run `npm install` to install the dependencies.
-    -   Run `npm run dev` to start the frontend development server. It will run on `http://localhost:5173`.
+## 🛠️ Tech Stack
 
-Now you can open your browser and go to `http://localhost:5173` to use the application.
+### Frontend
+
+* React (Vite)
+* React Router DOM
+* Axios / Fetch API
+* CSS / Tailwind (if used)
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB (Atlas)
+* Mongoose
+* CORS
+* dotenv
+
+### Deployment
+
+* Frontend: **Vercel**
+* Backend: **Render**
+
+---
+
+## 📁 Project Structure
+
+```
+root/
+│
+├── frontend/          # Vite + React app
+│   ├── src/
+│   ├── vercel.json    # SPA rewrite config
+│   └── package.json
+│
+├── backend/           # Express API
+│   ├── index.js
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## ✨ Features
+
+* Create text pastes
+* Generate unique paste URLs
+* View shared pastes
+* Copy & share paste links
+* REST API based backend
+* Fully deployed (Frontend + Backend)
+
+---
+
+## ⚙️ Environment Variables
+
+### Backend (`backend/.env`)
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+### Frontend (`frontend/.env`)
+
+```
+VITE_API_BASE_URL=https://pastebin-s77e.onrender.com
+```
+
+---
+
+## 🧪 Run Locally
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/pastebin-clone.git
+cd pastebin-clone
+```
+
+---
+
+### 2️⃣ Run Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Server will run on:
+
+```
+http://localhost:5000
+```
+
+---
+
+### 3️⃣ Run Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+App will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🌍 Deployment Notes
+
+### Backend (Render)
+
+* Root directory: `backend`
+* Build command: `npm install`
+* Start command: `npm start`
+
+### Frontend (Vercel)
+
+* Root directory: `frontend`
+* Framework: Vite
+* Added `vercel.json` to fix SPA refresh 404 issue
+
+```json
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+```
+
+---
+
+## 🧠 Common Issues Solved
+
+* ❌ 404 on page refresh → ✅ Fixed using Vercel rewrites
+* ❌ Invalid JSON error → Caused by HTML response from wrong API URL
+* ❌ `/undefined/api/...` → Fixed by correct `VITE_API_BASE_URL`
+
+---
+
+## 📌 Future Improvements
+
+* Paste expiration time
+* Rate limiting
+
+---
+
+## 👨‍💻 Author
+
+**Krish**
+MERN Stack Developer
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ and feel free to fork!
