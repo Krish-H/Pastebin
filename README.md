@@ -18,7 +18,7 @@ A full‑stack Pastebin‑like web application built using **Vite + React** for 
 * React (Vite)
 * React Router DOM
 * Fetch API
-* Tailwind (if used)
+* Tailwind 
 
 ### Backend
 
