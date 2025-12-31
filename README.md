@@ -17,8 +17,8 @@ A full‑stack Pastebin‑like web application built using **Vite + React** for 
 
 * React (Vite)
 * React Router DOM
-* Axios / Fetch API
-* CSS / Tailwind (if used)
+* Fetch API
+* Tailwind (if used)
 
 ### Backend
 
@@ -78,7 +78,7 @@ MONGO_URI=your_mongodb_connection_string
 ### Frontend (`frontend/.env`)
 
 ```
-VITE_API_BASE_URL=https://pastebin-s77e.onrender.com
+VITE_API_BASE_URL=https:your_backend_url
 ```
 
 ---
@@ -88,8 +88,8 @@ VITE_API_BASE_URL=https://pastebin-s77e.onrender.com
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/pastebin-clone.git
-cd pastebin-clone
+git clone https://github.com/your-username/pastebin.git
+cd pastebin
 ```
 
 ---
@@ -99,7 +99,7 @@ cd pastebin-clone
 ```bash
 cd backend
 npm install
-npm run dev
+node index.js
 ```
 
 Server will run on:
