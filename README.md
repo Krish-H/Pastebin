@@ -1,4 +1,4 @@
-# Pastebin Clone – Full Stack MERN Application
+# Pastebin  – Full Stack MERN Application
 
 A full‑stack Pastebin‑like web application built using **Vite + React** for the frontend and **Node.js + Express** for the backend. Users can create, share, and view text pastes via unique URLs.
 
