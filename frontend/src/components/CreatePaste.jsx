@@ -67,7 +67,7 @@ export default function CreatePaste() {
               />
             </div>
 
-            <button className="w-full bg-blue-600 hover:bg-blue-700 transition rounded-lg py-2 font-semibold">
+            <button className="w-full bg-blue-600 hover:bg-blue-700 transition rounded-lg py-2 font-semibold cursor-pointer">
               Create Paste
             </button>
           </form>
@@ -86,14 +86,14 @@ export default function CreatePaste() {
             <div className="flex gap-3">
               <button
                 onClick={() => navigator.clipboard.writeText(pasteUrl)}
-                className="flex-1 bg-emerald-600 hover:bg-emerald-700 rounded-lg py-2 font-medium"
+                className="flex-1 bg-emerald-600 hover:bg-emerald-700 rounded-lg py-2 font-medium cursor-pointer"
               >
                 Copy Link
               </button>
 
               <button
                 onClick={resetForm}
-                className="flex-1 bg-slate-700 hover:bg-slate-600 rounded-lg py-2 font-medium"
+                className="flex-1 bg-slate-700 hover:bg-slate-600 rounded-lg py-2 font-medium cursor-pointer"
               >
                 Create New
               </button>
